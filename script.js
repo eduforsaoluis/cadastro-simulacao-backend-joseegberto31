@@ -35,7 +35,18 @@ form.addEventListener("submit", function(e) {
   mensagem.textContent = "Enviando..."
   mensagem.style.color = "black"
 
-  fetch("https://jsonplaceholder.typicode.com/posts", {
+let idade = 42
+
+ const dados = {
+  nome, 
+  email,
+  idade
+ }
+
+ console.log(dados)
+ console.log(JSON.stringify(dados))
+
+  fetch(https://servlet-data-hub.replit.app/api/cadastro, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
